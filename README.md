@@ -13,7 +13,7 @@ The best score on the training and testing sets came from the Multinomial Naive 
   - Best Test Score: 0.61
   - Best Vectorizer: CountVectorizer(analyzer='char_wb', min_df=2, ngram_range=(2, 5))
 
-After additional iterations on the model parameters and vectorizer parametetrs, the model only improved slightly on the testing set:
+After additional iterations on the model parameters and vectorizer parameters, the model only improved slightly on the testing set:
   - Best Model Parameters: {'alpha': 1.0, 'class_prior': None, 'fit_prior': True, 'force_alpha': 'warn'}
   - Best Test Score: 0.622
   - Best Count Vectorizer: CountVectorizer(analyzer='char_wb', min_df=2, ngram_range=(4, 6))
