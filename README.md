@@ -1,5 +1,8 @@
 # Ind_Project_New-Topic-Analysis-Classification--Kaggle
 
+## Screenshot
+![screenshot](https://github.com/dmarks84/Ind_Project_New-Topic-NLP-Analysis-Classification--Kaggle/blob/main/nlp_screenshot.png?raw=true)
+
 ## Summary
 I worked with the News Category Dataset, which provided a headline and description, etc. in .json format.  I created a dataframe, focused the data on the headline text, and began to engineer features using the NLTK library for NLP.  I tokenized and then lemmatized the words in each headline based on all possible parts of speech built into the lemmatizer Class.  For each lemmatized word, I used NLTK again to display the part of speech in order to concatenate this to the words-- this provided different features for the times when the same word (by spelling) was used in a different way (e.g., roll as a noun vs. roll as a verb).  I used two different vectorizers, Tf-Idf, and Count, and created different sparse matrices for each based on a split of the full data for training/validation and testing.  I used several classifiers to train on the data, using GridSearchCV for initial cross-validation and parameter tuning, and scored it on the testing set, picking the "best" (based on accuracy score on the testing set) of this group for additional hyperparameter tuning and vectorization iterations as well. I used this best model to predict the category of a few different recent headlines.  
 
